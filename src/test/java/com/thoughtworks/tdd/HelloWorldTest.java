@@ -51,4 +51,28 @@ public class HelloWorldTest {
         //then
         assertThat(actual, is("Hello World"));
     }
+
+
+    @Test
+    public void sholud_return_Fizz_when_call_number_with_3(){
+        Number number = new Number();
+        String actual = number.number(3);
+        assertThat(actual, is("Fizz"));
+
+    }
+    @Test
+    public void sholud_return_Buzz_when_call_number_with_5(){
+        Number number = new Number();
+        String actual = number.number(5);
+        assertThat(actual, is("Buzz"));
+
+    }
+    @Test
+    public void sholud_return_FizzBuzz_when_call_number_with_15(){
+        Number number = new Number();
+        String actual = number.number(15);
+        assertThat(actual, is("FizzBuzz"));
+
+    }
+
 }
